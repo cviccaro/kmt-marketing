@@ -1,12 +1,12 @@
 import {Component} from 'angular2/core';
-import {ROUTER_DIRECTIVES, RouteConfig} from 'angular2/router';
-import {NameListService} from '../shared/index';
+import {ROUTER_DIRECTIVES, RouteConfig, Router} from 'angular2/router';
 import {HomeComponent} from '../+home/index';
-import {AboutComponent} from '../+about/index';
+import {FinishComponent} from '../+finish/index';
+import {ProductService, SubmissionService} from '../shared/index';
 
 @Component({
   selector: 'kmt-app',
-  viewProviders: [NameListService],
+  viewProviders: [ProductService, SubmissionService],
   templateUrl: './app/components/app.component.html',
   directives: [ROUTER_DIRECTIVES]
 })
@@ -17,9 +17,23 @@ import {AboutComponent} from '../+about/index';
     component: HomeComponent
   },
   {
-    path: '/about',
-    name: 'About',
-    component: AboutComponent
+    path: '/finish',
+    name: 'Finish',
+    component: FinishComponent,
+    data: {
+      'title': 'Submission Complete' 
+    }
   }
 ])
-export class AppComponent {}
+export class AppComponent {
+  pageTitle: string = 'Kennametal DVD & Poster Order Form';
+
+  constructor(private _router: Router) {
+    this._router.subscribe((val) => {
+      var title = this._router.currentInstruction.component.routeData.get('title');
+      if (title !== null) {
+        this.pageTitle = title;
+      }
+    });
+  }
+}

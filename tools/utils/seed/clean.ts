@@ -8,7 +8,6 @@ export function clean(paths: string|string[]): (done: () => void) => void {
     if (!(paths instanceof Array)) {
       pathsArray = [<string>paths];
     } else pathsArray = paths;
-    console.log(pathsArray);
     let promises = pathsArray.map(p => {
       return new Promise(resolve => {
         rimraf(p, e => {

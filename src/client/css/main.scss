@@ -62,6 +62,18 @@ button:hover {
   background-color: #28739e;
 }
 
+header {
+  width: 100%;
+  background-color: rgb(255, 210, 0);
+  background-image: url('../assets/kmt-banner-bg.png');
+  background-position: 0% calc(100% - 5px);
+  background-repeat: no-repeat;
+  padding-bottom: 3em;
+  .logo {
+    margin: 50px 0 25px;
+  }
+}
+
 
 .form-pane {
   width: 100%;
@@ -74,7 +86,7 @@ button:hover {
   }
 }
 
-.poster-title {
+.product-title {
   font-size: 18px;
 }
 .header-row h3 {

@@ -1,45 +1,44 @@
-import {Component} from 'angular2/core';
-import {NgForm, Control, ControlGroup, Validators, CurrencyPipe} from 'angular2/common';
-import {Submission, Product, ProductVariation, CartItem} from '../../shared/index';
+import {Component, ViewChild} from 'angular2/core';
+import {NgForm, CurrencyPipe} from 'angular2/common';
+import {Router} from 'angular2/router';
+import {Submission, Product, ProductVariation, CartItem, SubmissionService, CartComponent} from '../../shared/index';
 
 @Component({
 	selector: 'kmt-order-form',
 	templateUrl: 'app/+home/components/order-form.component.html',
 	styleUrls: ['app/+home/components/order-form.component.css'],
+	directives: [CartComponent],
 	pipes: [CurrencyPipe]
 })
 export class OrderFormComponent {
-	public cartTotal = 0;
-
 	public submission: Submission = new Submission();
+
+	@ViewChild('cart') cart: CartComponent;
+
+	constructor(private _router: Router, private _submissionService: SubmissionService) { }
 
 	ngAfterViewInit() {
 		console.log('OrderFormComponent view initialized.', this);
 	}
 
 	formIsValid(orderForm: NgForm) {
-		return orderForm.form.valid && this.submission.cart.length != 0;
+		return orderForm.form.valid && this.submission.cart.length !== 0;
 	}
 
 	onSubmit() {
-		console.log('on submit!', this);
+		this._submissionService.setSubmission(this.submission);
+		this._router.navigate(['Finish']);
 	}
-
-	updateTotal() {
-		if (this.submission.cart.length) {
-			this.cartTotal = this.submission.cart
-				.map(item => return item.cost * item.qty / 100)
-				.reduce((prev, val, index) => return prev + val));
-		}
-	}
-
+	
 	public updateCart(product: Product, v: ProductVariation, qty: number) {
 		console.log('orderForm.updateCart() called with', {
 			product: product,
 			variation: v,
 			qty: qty
 		});
-		const desc = `${product.title} - ${v.lang} - ${v.size}`;
+		let desc = `${product.title} - ${v.lang}`;
+		if (v.size) { desc += ` - ${v.size}`; }
+
 		const inCart = this.submission.cart.filter((item) => item.product_id === product.id && item.variation_id === v.id);
 		if (inCart.length) {
 			const index = this.submission.cart.indexOf(inCart[0]);
@@ -51,7 +50,7 @@ export class OrderFormComponent {
 		} else if (qty > 0) {
 			this.submission.cart.push(new CartItem(product.id, v.id, desc, qty, v.price));
 		}
-		this.updateTotal();
+		this.cart.updateTotal();
 	}
 
 }

@@ -1,1 +1,0 @@
-{"version":3,"sources":["app/+home/components/order-form.component.scss"],"names":[],"mappings":"AAAA,MACC,UAAY,CACZ","file":"order-form.component.css","sourcesContent":[":host {\n\twidth: 100%;\n}"]}

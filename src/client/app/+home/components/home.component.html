@@ -1,20 +1,24 @@
-<header>
+<div id="page_top">
 	<div class="container">
-		<h1 id="page-title">Kennametal DVD & Poster Order Form</h1>
 		<p>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec augue dictum, accumsan quam id, rhoncus ipsum. Mauris vitae libero tellus. Cras hendrerit feugiat nisi vel sagittis. Phasellus sit amet ullamcorper dui. Donec lobortis leo ac tellus sodales, nec tempor quam imperdiet. Vivamus maximus, elit at feugiat euismod, dolor ipsum gravida magna, non feugiat libero arcu at quam. In hac habitasse platea dictumst. Donec efficitur erat iaculis turpis dictum, at congue nunc lacinia. Curabitur dignissim sapien ut sem vestibulum euismod. Aenean quis ex magna.
 
 		Praesent semper eros sit amet orci cursus, sed convallis leo faucibus. Sed tellus sem, rutrum vel imperdiet varius, fringilla ac turpis. Sed a molestie arcu. Etiam interdum leo neque, non posuere odio convallis id. Nulla quis gravida tellus. Sed pulvinar pulvinar diam, vel pretium lorem cursus vitae. Mauris et nibh euismod ante tristique ullamcorper sed suscipit sapien. Nulla vulputate lacus ut turpis lobortis dapibus. Aenean sodales nisl ac nunc congue, vel pharetra massa rhoncus. Praesent imperdiet enim at orci imperdiet tristique.
 		</p>
 	</div>
-</header>
+</div>
 <div id="content" class="container">
 	<div class="form-pane">
-		<kmt-poster *ngFor="#product of posters" [product]="product" (qtyChange)="qtyChange($event, orderForm)" class="col-md-3"></kmt-poster>
+	<h1 class="pane-title" *ngIf="posters">Beyond Evolution&trade; Posters</h1>
+		<kmt-product *ngFor="#product of posters" [product]="product" (qtyChange)="qtyChange($event, orderForm)" class="col-md-3"></kmt-product>
 	</div>
-	<div class="form-pane">
+	<div class="form-pane" *ngIf="videos">
+		<h1 class="pane-title">Beyond Evolution&trade; Video</h1>
+		<kmt-product *ngFor="#product of videos" [product]="product" (qtyChange)="qtyChange($event, orderForm)" class="col-md-6"></kmt-product>
+	</div>
+	<div class="form-pane" *ngIf="posterDesigns">
 		<h1 class="pane-title">Corporate Poster Designs</h1>
-		<kmt-poster-design *ngFor="#product of posterDesigns" [product]="product" (qtyChange)="qtyChange($event, orderForm)" class="col-md-6"></kmt-poster-design>
+		<kmt-product *ngFor="#product of posterDesigns" [product]="product" (qtyChange)="qtyChange($event, orderForm)" class="col-md-6"></kmt-product>
 	</div>
 
 	<kmt-order-form #orderForm>

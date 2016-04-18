@@ -1,14 +1,14 @@
 import {Component, ViewChild} from 'angular2/core';
 import {CORE_DIRECTIVES, FORM_DIRECTIVES} from 'angular2/common';
 
-import {NameListService, ProductService, Product, ProductVariation, PosterComponent, PosterDesignComponent} from '../../shared/index';
+import {ProductService, Product, ProductVariation, ProductComponent} from '../../shared/index';
 import {OrderFormComponent} from './order-form.component';
 
 @Component({
   selector: 'kmt-home',
   templateUrl: 'app/+home/components/home.component.html',
   styleUrls: ['app/+home/components/home.component.css'],
-  directives: [FORM_DIRECTIVES, CORE_DIRECTIVES, OrderFormComponent, PosterComponent, PosterDesignComponent],
+  directives: [FORM_DIRECTIVES, CORE_DIRECTIVES, OrderFormComponent, ProductComponent],
 })
 export class HomeComponent {
   newName: string;
@@ -26,12 +26,12 @@ export class HomeComponent {
       console.log(this);
     });
   }
-  
+
   getVariations(products: Product[]) {
     products.forEach((product) => {
       this.productService.variations(product).subscribe((variations) => {
         product.variations = variations;
-      })
+      });
     });
   }
 

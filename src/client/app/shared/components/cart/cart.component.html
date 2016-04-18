@@ -1,0 +1,13 @@
+<div class="header-row">
+	<h3 class="col-desc col-md-7">Item Description</h3>
+	<h3 class="col-qty col-md-2">Quantity</h3>
+	<h3 class="col-cost col-md-3">Cost</h3>
+</div>
+<div class="table-row" *ngFor="#item of cart">
+	<div class="col-desc col-md-7">{{item.description}}</div>
+	<div class="col-qty col-md-2">{{item.qty}}</div>
+	<div class="col-cost col-md-3">{{item.cost/100 * item.qty | currency:'USD':true}}</div>
+</div>
+<div class="table-row total-row">
+	<h3>Subtotal: {{cartTotal | currency:'USD':true}}</h3>
+</div>

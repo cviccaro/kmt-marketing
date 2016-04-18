@@ -1,0 +1,26 @@
+<h2 class="product-title video-title">{{product.title}}</h2>
+<div class="product-image video-image" *ngIf="product.image">
+	<img [src]="product.image" />
+</div>
+<div class="form-container">
+	<div class="header-row" [ngSwitch]="customHeader">
+		<template ngSwitchDefault>
+			<h3 [innerHTML]="customHeader"></h3>
+		</template>
+		<template [ngSwitchWhen]="false">
+			<h3 class="col-lang col-md-10">Select Language</h3>
+			<h3 class="col-qty col-md-2">Quantity</h3>
+		</template>
+	</div>
+	<div class="form-row" *ngFor="#variation of product.variations" [ngSwitch]="variation.extra">
+		<template ngSwitchDefault>
+			<div class="col-extra col-md-12" [innerHTML]="variation.extra"></div>
+		</template>
+		<template [ngSwitchWhen]="false">
+			<div class="col-lang col-md-10" [innerHTML]="variation.description()"></div>
+			<div class="col-qty col-md-2">
+				<input type="number" [(ngModel)]="quantities[variation.id]" size="2" (change)="qtyChanged(variation)" min=0 />
+			</div>
+		</template>
+	</div>
+</div>
