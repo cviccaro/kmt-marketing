@@ -1,3 +1,5 @@
+import {CartItem} from '../index';
+
 export class Submission {
 	constructor(
 		public name: string = '',
@@ -12,6 +14,6 @@ export class Submission {
 		public costCenterNumber: string = '',
 		public employeeID: string = '',
 		public timestamp: any = null,
-		public cart: any = {}
+		public cart: CartItem[] = []
 	) {}
 }

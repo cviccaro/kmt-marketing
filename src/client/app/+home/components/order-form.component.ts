@@ -1,63 +1,57 @@
 import {Component} from 'angular2/core';
-import {NgForm, Control, ControlGroup, FormBuilder, Validators} from 'angular2/common';
-import {Submission} from '../../shared/index';
+import {NgForm, Control, ControlGroup, Validators, CurrencyPipe} from 'angular2/common';
+import {Submission, Product, ProductVariation, CartItem} from '../../shared/index';
 
 @Component({
 	selector: 'kmt-order-form',
-	moduleId: module.id,
-	templateUrl: './order-form.component.html',
-	styleUrls: [
-		'./order-form.component.css'
-	]
+	templateUrl: 'app/+home/components/order-form.component.html',
+	styleUrls: ['app/+home/components/order-form.component.css'],
+	pipes: [CurrencyPipe]
 })
 export class OrderFormComponent {
-	// public name: Control;
-	// public jobTitle: Control;
-	// public department: Control;
-	// public email: Control;
-	// public phone: Control;
-	// public address: Control;
-	// public city: Control;
-	// public state: Control;
-	// public zip: Control;
-	// public costCenterNumber: Control;
-	// public employeeID: Control;
-
-	// public form: ControlGroup;
+	public cartTotal = 0;
 
 	public submission: Submission = new Submission();
-
-	constructor(private builder: FormBuilder) {
-		// this.name = new Control('', Validators.required);
-		// this.jobTitle = new Control('', Validators.required);
-		// this.department = new Control('', Validators.required);
-		// this.email = new Control('e.g. lastname.firstname@kennametasdasdsal.com', Validators.required);
-		// this.phone = new Control('', Validators.required);
-		// this.state = new Control('', Validators.required);
-		// this.zip = new Control('', Validators.required);
-		// this.costCenterNumber = new Control('', Validators.required);
-		// this.employeeID = new Control('', Validators.required);
-
-		// this.form = builder.group({
-		// 	name: this.name,
-		// 	jobTitle: this.jobTitle,
-		// 	department: this.department,
-		// 	email: this.email,
-		// 	phone: this.phone,
-		// 	address: this.address,
-		// 	city: this.city,
-		// 	state: this.state,
-		// 	zip: this.zip,
-		// 	costCenterNumber: this.costCenterNumber,
-		// 	employeeID: this.employeeID
-		// });
-	}
 
 	ngAfterViewInit() {
 		console.log('OrderFormComponent view initialized.', this);
 	}
 
+	formIsValid(orderForm: NgForm) {
+		return orderForm.form.valid && this.submission.cart.length != 0;
+	}
+
 	onSubmit() {
 		console.log('on submit!', this);
 	}
+
+	updateTotal() {
+		if (this.submission.cart.length) {
+			this.cartTotal = this.submission.cart
+				.map(item => return item.cost * item.qty / 100)
+				.reduce((prev, val, index) => return prev + val));
+		}
+	}
+
+	public updateCart(product: Product, v: ProductVariation, qty: number) {
+		console.log('orderForm.updateCart() called with', {
+			product: product,
+			variation: v,
+			qty: qty
+		});
+		const desc = `${product.title} - ${v.lang} - ${v.size}`;
+		const inCart = this.submission.cart.filter((item) => item.product_id === product.id && item.variation_id === v.id);
+		if (inCart.length) {
+			const index = this.submission.cart.indexOf(inCart[0]);
+			if (qty === 0) {
+				this.submission.cart.splice(index);
+			} else {
+				this.submission.cart[index] = new CartItem(product.id, v.id, desc, qty, v.price);
+			}
+		} else if (qty > 0) {
+			this.submission.cart.push(new CartItem(product.id, v.id, desc, qty, v.price));
+		}
+		this.updateTotal();
+	}
+
 }

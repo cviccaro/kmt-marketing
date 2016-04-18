@@ -1,0 +1,1 @@
+{"version":3,"sources":["app/+home/components/home.component.scss"],"names":[],"mappings":"AAAA;EACE,eAAe;EACf,gBAAgB,EACjB;;AAED;EACE,aAAa,EACd;;AAED;EACE,sBAAsB;EACtB,mBAAmB,EACpB","file":"home.component.css","sourcesContent":[":host {\n  display: block;\n  padding: 0 16px;\n}\n\ninput {\n  width: 250px;\n}\n\nul {\n  list-style-type: none;\n  padding: 0 0 0 8px;\n}\n"]}

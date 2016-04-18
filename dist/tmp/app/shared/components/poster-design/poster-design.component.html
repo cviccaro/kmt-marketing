@@ -1,0 +1,16 @@
+<h2 class="poster-title">{{product.title}}</h2>
+<div class="poster-image" *ngIf="product.image">
+	<img [src]="product.image" />
+</div>
+<div class="form-container">
+	<div class="header-row">
+		<h3 class="col-lang col-md-10">Select Language</h3>
+		<h3 class="col-qty col-md-2">Quantity</h3>
+	</div>
+	<div class="form-row" *ngFor="#variation of product.variations">
+		<div class="col-lang col-md-10">{{variation.lang}} &mdash; {{variation.size}}</div>
+		<div class="col-qty col-md-2">
+			<input type="number" [(ngModel)]="quantities[variation.id]" size="2" (change)="qtyChanged(variation)" min=0 />
+		</div>
+	</div>
+</div>
