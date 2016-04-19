@@ -1,3 +1,27 @@
 :host {
-	
+    .header-row {
+        min-height: 22px;
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        margin-bottom: 1em;
+
+        .col {
+            font-size: 13px;
+            height: auto;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+    }
+    .total-row {
+    	border-top: 1px solid #ddd;
+    	padding-top: 0.5em;
+    	margin-top: 1em;
+    	font-size: 18px;
+    	.total-label {
+    		font-weight: bold;
+    	}
+    	.total-amount {
+    		font-size: 16px;
+    	}
+    }
 }

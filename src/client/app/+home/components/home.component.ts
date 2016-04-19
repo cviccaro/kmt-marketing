@@ -1,4 +1,4 @@
-import {Component, ViewChild} from 'angular2/core';
+import {Component, ViewChild, AfterViewInit} from 'angular2/core';
 import {CORE_DIRECTIVES, FORM_DIRECTIVES} from 'angular2/common';
 
 import {ProductService, Product, ProductVariation, ProductComponent} from '../../shared/index';
@@ -8,10 +8,9 @@ import {OrderFormComponent} from './order-form.component';
   selector: 'kmt-home',
   templateUrl: 'app/+home/components/home.component.html',
   styleUrls: ['app/+home/components/home.component.css'],
-  directives: [FORM_DIRECTIVES, CORE_DIRECTIVES, OrderFormComponent, ProductComponent],
+  directives: [FORM_DIRECTIVES, CORE_DIRECTIVES, OrderFormComponent, ProductComponent]
 })
-export class HomeComponent {
-  newName: string;
+export class HomeComponent implements AfterViewInit {
   posters: Product[];
   posterDesigns: Product[];
   videos: Product[];
@@ -20,28 +19,18 @@ export class HomeComponent {
 
   constructor(public productService: ProductService) {
     this.productService.all().subscribe((products) => {
-      this.setProducts('poster', 'posters', products);
-      this.setProducts('poster_design', 'posterDesigns', products);
-      this.setProducts('video', 'videos', products);
-      console.log(this);
+      console.log('got products: ', products);
+      this.posters = products.filter((product: Product) => product.type === 'poster');
+      this.posterDesigns = products.filter((product: Product) => product.type === 'poster_design');
+      this.videos = products.filter((product: Product) => product.type === 'video');
     });
   }
-
-  getVariations(products: Product[]) {
-    products.forEach((product) => {
-      this.productService.variations(product).subscribe((variations) => {
-        product.variations = variations;
-      });
-    });
-  }
-
-  setProducts(type: string, propName: string, products: Product[]) {
-    this[propName] = products.filter(product => product.type === type);
-    this.getVariations(this[propName]);
+  
+  ngAfterViewInit() {
+    console.log('HomeComponent View initialized.', this);
   }
 
   qtyChange(opts: {product: Product, variation: ProductVariation, qty: number}) {
-    console.log('qtyChange()', opts, this);
     this.orderForm.updateCart(opts.product, opts.variation, opts.qty);
   }
 }

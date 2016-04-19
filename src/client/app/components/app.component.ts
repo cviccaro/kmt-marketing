@@ -1,14 +1,18 @@
-import {Component} from 'angular2/core';
+import {Component, provide} from 'angular2/core';
 import {ROUTER_DIRECTIVES, RouteConfig, Router} from 'angular2/router';
 import {HomeComponent} from '../+home/index';
 import {FinishComponent} from '../+finish/index';
-import {ProductService, SubmissionService} from '../shared/index';
+import {ProductService, SubmissionService, apiConfig, API_CONFIG} from '../shared/index';
 
 @Component({
   selector: 'kmt-app',
-  viewProviders: [ProductService, SubmissionService],
   templateUrl: './app/components/app.component.html',
-  directives: [ROUTER_DIRECTIVES]
+  directives: [ROUTER_DIRECTIVES],
+  providers: [
+    provide(API_CONFIG, { useValue: apiConfig }),
+    ProductService,
+    SubmissionService
+  ]
 })
 @RouteConfig([
   {
@@ -21,7 +25,7 @@ import {ProductService, SubmissionService} from '../shared/index';
     name: 'Finish',
     component: FinishComponent,
     data: {
-      'title': 'Submission Complete' 
+      'title': 'Thanks!' 
     }
   }
 ])

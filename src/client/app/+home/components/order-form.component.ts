@@ -26,16 +26,14 @@ export class OrderFormComponent {
 	}
 
 	onSubmit() {
-		this._submissionService.setSubmission(this.submission);
-		this._router.navigate(['Finish']);
+		this._submissionService.submit(this.submission).subscribe((res) => {
+			this._router.navigate(['Finish']);
+		}, (errors) => {
+			console.log("onSubmit returned an error.", errors);
+		});
 	}
 	
 	public updateCart(product: Product, v: ProductVariation, qty: number) {
-		console.log('orderForm.updateCart() called with', {
-			product: product,
-			variation: v,
-			qty: qty
-		});
 		let desc = `${product.title} - ${v.lang}`;
 		if (v.size) { desc += ` - ${v.size}`; }
 
@@ -50,6 +48,7 @@ export class OrderFormComponent {
 		} else if (qty > 0) {
 			this.submission.cart.push(new CartItem(product.id, v.id, desc, qty, v.price));
 		}
+		
 		this.cart.updateTotal();
 	}
 

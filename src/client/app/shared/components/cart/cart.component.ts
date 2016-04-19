@@ -21,7 +21,7 @@ export class CartComponent implements AfterViewInit, OnInit {
 	}
 
 	public updateTotal() {
-		if (this.cart && this.cart.length) {
+		if (this.cart !== undefined && this.cart.length) {
 			this.cartTotal = this.cart
 				.map(item => item.cost * item.qty / 100)
 				.reduce((prev, val, index) => prev + val);

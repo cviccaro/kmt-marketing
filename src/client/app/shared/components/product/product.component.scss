@@ -1,3 +1,47 @@
 :host {
-	
+  .product-title {
+    font-size: 16px;
+    margin: 0 0 1em;
+  }
+  .product-image {
+    img {
+      width: 100%;
+    }
+    margin: 1em 0;
+  }
+  .header-row {
+    min-height: 22px;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    margin-bottom: 1em;
+    .col {
+  	  font-size: 14px;
+	    height: auto;
+      margin-bottom: 0.5em;
+      font-weight: bold;
+    }
+  }
+  .col-qty,.col-lang {
+    font-size: 12px;
+  }
+  .col-qty {
+  	input {
+      width: 40px;
+      min-width: 0px;
+      height: 18px;
+      padding: 0;
+    }
+  }
+  .form-row {
+  	float: left;
+  	clear: both;
+  	width: 100%;
+    .col {
+      font-size: 11px;
+    }
+  }
+  input[type="number"] {
+    border-color: #ddd;
+    text-align: center;
+  }
 }

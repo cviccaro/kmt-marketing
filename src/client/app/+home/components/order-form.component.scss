@@ -1,3 +1,14 @@
 :host {
 	width: 100%;
+	display: block;
+	margin-top: 3em;
+	.form-actions {
+		margin: 2em 0 4em;
+	}
+	.form-group.required {
+		.control-label:after {
+			content: " *";
+			color: rgb(230, 64, 64);
+		}
+	}
 }

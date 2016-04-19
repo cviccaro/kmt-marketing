@@ -15,4 +15,8 @@ export class ProductVariation {
 		}
 		return str;
 	}
+
+	hasExtra() {
+		return this.extra && this.extra.length > 0;
+	}
 }

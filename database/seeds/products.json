@@ -1,0 +1,10 @@
+[
+	{"title": "Beyond Evolution Overview Poster", "type": "poster", "category": "Beyond Evolution Posters", "image": "placeholder-poster.jpg", "price": 500, "customHeader": ""},
+	{"title": "Beyond Evolution EASY Poster - Surface Finish", "type": "poster", "category": "Beyond Evolution Posters", "image": "placeholder-poster.jpg", "price": 600, "customHeader": ""},
+	{"title": "Beyond Evolution EASY Poster - Saving Money", "type": "poster", "category": "Beyond Evolution Posters", "image": "placeholder-poster.jpg", "price": 600, "customHeader": ""},
+	{"title": "Beyond Evolution EASY Poster - Productivity", "type": "poster", "category": "Beyond Evolution Posters", "image": "placeholder-poster.jpg", "price": 600, "customHeader": ""},
+	{"title": "Beyond Evolution DVD", "type": "video", "category": "Beyond Evolution Video", "image": "placeholder-video.jpg", "price": 250, "customHeader": ""},
+	{"title": "Beyond Evolution Video File", "type": "video", "category": "Beyond Evolution Video", "image": "placeholder-video.jpg", "price": 0, "customHeader": "Download Here for FREE"},
+	{"title": "Ethics Poster", "type": "poster_design", "category": "Corporate Poster Designs", "image": "placeholder-poster-design.jpg", "price": 840, "customHeader": ""},
+	{"title": "CIO100 Award Poster", "type": "poster_design", "category": "Corporate Poster Designs", "image": "placeholder-poster-design.jpg", "price": 870, "customHeader": ""}
+]

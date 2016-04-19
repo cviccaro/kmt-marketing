@@ -1,26 +1,22 @@
 <h2 class="product-title video-title">{{product.title}}</h2>
 <div class="product-image video-image" *ngIf="product.image">
-	<img [src]="product.image" />
+	<img [src]="'http://kmt.localhost/assets/images/' + product.image" />
 </div>
 <div class="form-container">
-	<div class="header-row" [ngSwitch]="customHeader">
+	<div class="header-row row" [ngSwitch]="customHeader">
 		<template ngSwitchDefault>
-			<h3 [innerHTML]="customHeader"></h3>
+			<div class="col col-md-12 custom-header" [innerHTML]="customHeader"></div>
 		</template>
 		<template [ngSwitchWhen]="false">
-			<h3 class="col-lang col-md-10">Select Language</h3>
-			<h3 class="col-qty col-md-2">Quantity</h3>
+			<div class="col col-lang col-md-10">Select Language</div>
+			<div class="col col-qty col-md-2">Quantity</div>
 		</template>
 	</div>
-	<div class="form-row" *ngFor="#variation of product.variations" [ngSwitch]="variation.extra">
-		<template ngSwitchDefault>
-			<div class="col-extra col-md-12" [innerHTML]="variation.extra"></div>
-		</template>
-		<template [ngSwitchWhen]="false">
-			<div class="col-lang col-md-10" [innerHTML]="variation.description()"></div>
-			<div class="col-qty col-md-2">
-				<input type="number" [(ngModel)]="quantities[variation.id]" size="2" (change)="qtyChanged(variation)" min=0 />
-			</div>
-		</template>
+	<div class="form-row row" *ngFor="#variation of product.variations">
+		<div class="col col-extra col-md-12" [innerHTML]="variation.extra" *ngIf="variation.hasExtra()"></div>
+		<div class="col col-lang col-md-10" [innerHTML]="variation.description()" *ngIf="!variation.hasExtra()"></div>
+		<div class="col col-qty col-md-2" *ngIf="!variation.hasExtra()">
+			<input type="number" [(ngModel)]="quantities[variation.id]" size="2" (change)="qtyChanged(variation)" min=0 />
+		</div>
 	</div>
 </div>
