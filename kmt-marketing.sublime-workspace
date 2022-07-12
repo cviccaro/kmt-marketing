@@ -1,0 +1,741 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"un",
+				"$unmanaged_pdfs〔variable〕"
+			],
+			[
+				"Req",
+				"RequestOptionsArgs	alias"
+			],
+			[
+				"trade",
+				"tradeshowForm"
+			],
+			[
+				"tcp_no",
+				"tcp_nopush"
+			],
+			[
+				"rejec",
+				"rejection"
+			],
+			[
+				"mess",
+				"messageService"
+			],
+			[
+				"message",
+				"message_id"
+			],
+			[
+				"lead",
+				"leadForm"
+			],
+			[
+				"pr",
+				"promisedLeadData"
+			],
+			[
+				"prom",
+				"promisedData"
+			],
+			[
+				"tradeshow",
+				"$tradeshow_id〔variable〕"
+			],
+			[
+				"active",
+				"activate〔function〕"
+			],
+			[
+				"token",
+				"tokenString"
+			],
+			[
+				"loginS",
+				"loginService"
+			],
+			[
+				"authInter",
+				"authHttpInterceptor"
+			],
+			[
+				"Trade",
+				"TradeshowListController"
+			],
+			[
+				"sat",
+				"satellizer_token"
+			],
+			[
+				"page",
+				"pageNumber"
+			],
+			[
+				"Vlu",
+				"Vluzrmos\\Tinker\\TinkerServiceProvider〔class〕"
+			],
+			[
+				"dateTime",
+				"dateTimeThisYear〔variable〕"
+			],
+			[
+				"dateThis",
+				"dateTimeThisYear〔variable〕"
+			],
+			[
+				"comp",
+				"companyEmail〔variable〕"
+			],
+			[
+				"text",
+				"text〔function〕"
+			],
+			[
+				"te",
+				"realText〔function〕"
+			],
+			[
+				"num",
+				"numberBetween〔function〕"
+			],
+			[
+				"Create",
+				"create"
+			],
+			[
+				"toHave",
+				"toHaveBeenCalledWith"
+			],
+			[
+				"loginSer",
+				"loginServiceMock"
+			],
+			[
+				"defer",
+				"deferred"
+			],
+			[
+				"def",
+				"deferred"
+			],
+			[
+				"_fscarouseL",
+				"_fscarousel_make_thumb"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/client/app/+home/components/order-form.component.ts",
+			"settings":
+			{
+				"buffer_size": 1777,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/client/app/shared/services/product.service.ts",
+			"settings":
+			{
+				"buffer_size": 1033,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/client/app/shared/components/cart/cart.component.ts",
+			"settings":
+			{
+				"buffer_size": 720,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "beau",
+		"selected_items":
+		[
+			[
+				"beau",
+				"PHP CodeBeautifier"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"php",
+				"phpfmt: format now"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"upgr",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"togl",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"list p",
+				"Package Control: List Packages"
+			],
+			[
+				"sublimelinter",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"linter",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"remove pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"PROJECT",
+				"Project Manager: Add Project"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 664.0
+	},
+	"console":
+	{
+		"height": 406.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/chris/web/kmt-marketing",
+		"/C/Users/chris/web/kmt-marketing/src",
+		"/C/Users/chris/web/kmt-marketing/src/client",
+		"/C/Users/chris/web/kmt-marketing/src/client/app",
+		"/C/Users/chris/web/kmt-marketing/src/client/app/+home",
+		"/C/Users/chris/web/kmt-marketing/src/client/app/+home/components",
+		"/C/Users/chris/web/kmt-marketing/src/client/app/shared",
+		"/C/Users/chris/web/kmt-marketing/src/client/app/shared/components",
+		"/C/Users/chris/web/kmt-marketing/src/client/app/shared/services"
+	],
+	"file_history":
+	[
+		"/C/Users/chris/web/kmt-marketing/src/client/app/+home/components/home.component.ts",
+		"/C/Users/chris/web/jp6-angular2/src/shared/directives/infinite-scroll/infinite-scroll.directive.ts",
+		"/C/Users/chris/web/jp6-angular2/src/assets/main.scss",
+		"/C/Users/chris/web/jp6-angular2/src/shared/components/navbar/navbar.component.scss",
+		"/C/Users/chris/web/jp6-angular2/package.json",
+		"/C/Users/chris/web/jp6-angular2/src/shared/apiConfig.ts",
+		"/C/Users/chris/web/jp6-angular2/node_modules/ng2-material/source/core/style/layout.scss",
+		"/C/Users/chris/web/jp6-angular2/src/shared/components/pager/pager.component.ts",
+		"/C/Users/chris/web/jp6-angular2/src/shared/directives/splash/splash.directive.ts",
+		"/C/Users/chris/web/jp6-angular2/tools/config.ts",
+		"/C/Users/chris/web/jp6-angular2/src/home/components/home.component.ts",
+		"/C/Users/chris/web/kobold/kobold.php",
+		"/C/Users/chris/web/jp6-angular2/src/home/components/contact-form.component.ts",
+		"/C/Users/chris/web/kobold/orphaned-files.csv",
+		"/C/Users/chris/Desktop/kobold.php",
+		"/C/Users/chris/web/jp6-angular2/tslint.json",
+		"/C/Users/chris/web/jp6-angular2/typings/browser/ambient/jquery/jquery.d.ts",
+		"/C/Users/chris/web/jp6-angular2/typings/main/ambient/jquery/jquery.d.ts",
+		"/C/Users/chris/web/jp6-angular2/src/home/components/home.ts",
+		"/C/Users/chris/web/jp6-angular2/src/shared/services/work/work_service.ts",
+		"/C/Users/chris/web/jp6-angular2/tools/tasks/build.sass.dev.ts",
+		"/C/Users/chris/web/jp6-angular2/node_modules/rxjs/operator/map.d.ts",
+		"/C/Users/chris/web/jp6-angular2/node_modules/rxjs/operator/map.js.map",
+		"/C/Users/chris/web/jp6-angular2/node_modules/rxjs/operator/mapTo.js",
+		"/C/Users/chris/web/jp6-angular2/typings.json",
+		"/C/Users/chris/web/jp6-angular2/tsconfig.json",
+		"/C/Users/chris/web/jp6/src/app/core/modal-upload/modal-upload.config.js",
+		"/C/Users/chris/web/jp6/src/app/core/modal-upload/modal-upload.controller.js",
+		"/C/Users/chris/web/jp6/src/app/core/modal-upload/modal-upload.html",
+		"/C/Users/chris/web/jp6/src/app/components/admin/admin.config.js",
+		"/C/Users/chris/web/jp6/src/app/index.scss",
+		"/C/Users/chris/web/jp6/src/app/components/admin/blog/blog.controller.js",
+		"/C/Users/chris/AppData/Local/Temp/Temp1_DS2Fix64-20150507-647-0-5-1.zip/DS2Fix64-20150507/README.md",
+		"/C/Users/chris/web/jp6/src/app/components/admin/admin.controller.js",
+		"/C/Users/chris/web/jp6/src/app/core/busy/busy.html",
+		"/C/Users/chris/web/jp6/src/app/core/jp-image-upload/image-upload.directive.js",
+		"/C/Users/chris/web/jp6/gulp/server.js",
+		"/C/Users/chris/web/jp6/gulp/build.js",
+		"/C/Users/chris/web/jp6/src/app/components/main/main.html",
+		"/C/Users/chris/web/jp6/src/app/components/admin/blog/blog.html",
+		"/C/Users/chris/web/jp6/src/app/components/admin/staff/staff.controller.js",
+		"/C/Users/chris/web/jp6/src/app/core/jp-image-upload/image-upload.html",
+		"/C/Users/chris/web/jp6/src/app/core/jp-navbar/navbar.directive.js",
+		"/C/Users/chris/web/jp6/src/index.html",
+		"/C/Users/chris/web/jp6/src/app/core/background/background.scss",
+		"/C/Users/chris/web/jp6/src/app/components/main/main.scss",
+		"/C/Users/chris/web/jp6/src/app/components/admin/home/home.html",
+		"/C/Users/chris/web/jp6/src/app/components/admin/admin.html",
+		"/C/Users/chris/web/jp6/src/app/components/admin/login/login.html",
+		"/C/Users/chris/web/jp6/src/app/core/auth/auth.service.js",
+		"/C/Users/chris/web/jp6/src/app/components/admin/staff/staff.html",
+		"/C/Users/chris/web/jp6/src/app/components/admin/list-view/blogs.html",
+		"/C/Users/chris/web/jp6/src/app/components/admin/list-view/staff.html",
+		"/C/Users/chris/web/jp6/package.json",
+		"/C/nginx/sites-available/jpapi.conf",
+		"/C/Users/chris/web/jp6/.gitignore",
+		"/C/Users/chris/web/jp6/src/app/core/jp-card/card.scss",
+		"/C/Users/chris/web/jp6/src/app/index.route.js",
+		"/C/Users/chris/web/jp6/src/app/core/jp-navbar/navbar.scss",
+		"/C/Users/chris/web/jp6/login.txt",
+		"/C/Users/chris/web/jp6/ftpsync.settings",
+		"/C/Users/chris/web/jp6/src/app/core/navbar/navbar.directive.js",
+		"/C/Users/chris/web/jp6/src/app/core/navbar/navbar-floating.html",
+		"/C/Users/chris/web/jp6/src/app/core/navbar/navbar-floating.scss",
+		"/C/Users/chris/web/jp6/src/app/core/navbar/navbar.scss",
+		"/C/Users/chris/web/jp6/src/app/core/banner/bannerDirective.js",
+		"/C/Users/chris/web/jp6/src/app/core/banner/banner.scss",
+		"/C/Users/chris/web/jp6/src/app/core/banner/banner.html",
+		"/C/Users/chris/web/jp6/src/app/core/navbar/navbar.html",
+		"/C/Users/chris/web/jp6/src/app/components/main/main.controller.js",
+		"/C/Users/chris/web/jp6/src/app/core/navbar/navbar.floating.js",
+		"/C/Users/chris/web/jp6/src/app/core/navbar/navbar.floating.html",
+		"/C/nginx/sites-available/tsportal.conf",
+		"/C/Users/chris/web/tsportal/public/js/app.base.js",
+		"/C/Users/chris/web/tsportal/src/tsportal/templates.js",
+		"/C/Users/chris/web/tsportal/bootstrap/app.php",
+		"/C/Users/chris/web/tsportal/src/tsportal/app.js",
+		"/C/Users/chris/web/tsportal/src/tsportal/components/tradeshows/list/tradeshowListController.js",
+		"/C/Users/chris/web/tsportal/src/tsportal/shared/auth/authInterceptor.js",
+		"/C/Users/chris/web/tsportal/src/tsportal/shared/auth/authService.js",
+		"/C/Users/chris/web/tsportal/src/tsportal/shared/tradeshow/tradeshowService.js",
+		"/C/Users/chris/web/tsportal/src/tsportal/shared/tradeshow/tradeshowResource.js",
+		"/C/Users/chris/web/tsportal/src/tsportal/shared/tradeshow/tradeshowDirective.js",
+		"/C/Users/chris/web/tsportal/app/Http/Controllers/LeadController.php",
+		"/C/Users/chris/web/tsportal/app/USStates.php",
+		"/C/Users/chris/web/tsportal/src/tsportal/components/tradeshows/list/tradeshowListView.html",
+		"/C/Users/chris/web/tsportal/app/Http/routes.php",
+		"/C/Users/chris/web/tsportal/gulpfile.js",
+		"/C/Users/chris/web/tsportal/public/js/services/busyService.js",
+		"/C/Users/chris/web/tsportal/src/tsportal/controllers/tradeshowCreateController.js",
+		"/C/Users/chris/web/tsportal/src/tsportal/controllers/tradeshowListController.js",
+		"/C/Users/chris/web/tsportal/src/tsportal/controllers/authController.js",
+		"/C/Users/chris/web/tsportal/src/tsportal/controllers/tradeshowDetailController.js",
+		"/C/Users/chris/web/tsportal/public/js/interceptors/busyServiceInterceptor.js",
+		"/C/Users/chris/web/tsportal/public/js/services/loginService.js",
+		"/C/Users/chris/web/tsportal/public/js/interceptors/authInterceptor.js",
+		"/C/Users/chris/web/tsportal/public/js/directives/directives.js",
+		"/C/Users/chris/web/tsportal/public/js/controllers/authController.js",
+		"/C/Users/chris/web/tsportal/public/js/app.angular.js",
+		"/C/Users/chris/web/tsportal/app/Http/Controllers/Auth/ApiAuthController.php",
+		"/C/Users/chris/web/tsportal/public/js/services/leadService.js",
+		"/C/Users/chris/web/tsportal/public/js/controllers/tradeshowListController.js",
+		"/C/Users/chris/web/tsportal/public/js/services/tradeshowResource.js",
+		"/C/Users/chris/web/tsportal/public/partials/tradeshow-detail.html",
+		"/C/nginx/conf/nginx.conf",
+		"/C/nginx/conf/fastcgi.conf",
+		"/C/Users/chris/web/tsportal/resources/views/layout.blade.php",
+		"/C/Users/chris/web/tsportal/public/js/controllers/tradeshowDetailController.js",
+		"/C/Users/chris/web/tsportal/public/js/controllers/tradeshowCreateController.js",
+		"/C/Users/chris/web/tsportal/public/partials/lead-detail.html",
+		"/C/Users/chris/web/tsportal/public/partials/login-form.html",
+		"/C/Users/chris/web/tsportal/public/js/controllers/leadController.js",
+		"/C/Users/chris/web/tsportal/public/js/directives.js",
+		"/C/Users/chris/web/tsportal/public/partials/messages.html",
+		"/C/Users/chris/web/tsportal/public/js/messageService.js",
+		"/C/Users/chris/web/tsportal/public/js/leadController.js",
+		"/C/Users/chris/web/tsportal/public/js/authInterceptor.js",
+		"/C/Users/chris/web/tsportal/public/js/loginService.js",
+		"/C/Users/chris/web/tsportal/public/js/tradeshowCreateController.js",
+		"/C/Users/chris/web/tsportal/public/js/tradeshowDetailController.js",
+		"/C/Users/chris/web/tsportal/public/js/leadService.js",
+		"/C/Users/chris/web/tsportal/resources/views/angular.blade.php",
+		"/C/Users/chris/web/tsportal/public/js/authController.js",
+		"/C/Users/chris/web/tsportal/public/js/busyServiceInterceptor.js",
+		"/C/Users/chris/web/tsportal/public/js/busyService.js",
+		"/C/Users/chris/web/tsportal/public/partials/busy-indicator.html",
+		"/C/SublimeText3/Data/Packages/User/CodeComplice.sublime-settings",
+		"/C/Users/chris/web/tsportal/public/js/messageDisplayService.js"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"<current file>",
+			"c:/users/chris/web/tsportal/public",
+			"<current file>",
+			"c:\\users\\chris\\web/tsportal/public/js",
+			"~/web/tsportal/public/js",
+			"<current file>",
+			"c:\\users\\chris\\web\\tsportal\\test",
+			"c:\\users\\chris\\web\\tsportal\\public\\js",
+			"c:\\users\\chris\\web\\tsportal\\",
+			"c:\\users\\chris\\web\\tsportal\\public\\js",
+			"c:\\users\\chris\\web\\tsportal\\test",
+			"c:\\users\\chris\\web\\tsportal\\public\\js",
+			"c:\\users\\chris\\web\\tsportal\\app",
+			"c:\\users\\chris\\web\\tsportal",
+			"c:\\users\\chris\\web\\TradeshowPortal\\vendor",
+			"c:\\users\\chris\\web\\tsportal\\vendor",
+			"<current file>",
+			"C:\\Users\\chris/web/tsportal",
+			"C:\\Users\\chris/web/TradeshowPortal/public/js",
+			"~/web/TradeshowPortal/public/js",
+			"",
+			"C:\\nginx",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"jp-nav",
+			"md-content",
+			"_http",
+			"md-content",
+			".section",
+			"section",
+			"vm.staff",
+			"refreshTradeshows",
+			"ctrl.submitted",
+			"submitted",
+			"								//",
+			"AuthView",
+			"console",
+			"clearErrors",
+			"busyService",
+			"loginService",
+			"$stateParams",
+			"formCache",
+			"bootstrap",
+			"}}",
+			"{{",
+			"$log",
+			"console",
+			"$log",
+			"console",
+			"busyService.hide();",
+			"busySer",
+			"console",
+			"$log",
+			"numLeadsShow",
+			"leadCount",
+			"leadCurrentPage",
+			"refreshLeads",
+			"TradeshowController",
+			"setTimeout",
+			"Tradeshow.",
+			"Tradeshow",
+			"tradeshowService",
+			"$auth",
+			"satellizer",
+			"tokenCopy",
+			"array",
+			"favicon.icon",
+			"route:list",
+			"route",
+			"Command",
+			"Authorizable",
+			"extensions",
+			"TSPortal",
+			"API",
+			"api",
+			"TSPortal",
+			"busySer",
+			"getLeads().then",
+			"handleLeads",
+			"refreshLeads",
+			"transitionend",
+			"localStorage",
+			"handleLeads",
+			"to have a token",
+			"gfx",
+			"c:\\php",
+			"placeImageInfo",
+			"settings_form",
+			"get_chapter_images",
+			"thumbs"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"vm.person",
+			"ctrl.tradeshowForm.$submitted",
+			"ctrl.leadForm.$submitted",
+			"",
+			"numLeadsShown",
+			"currentPage",
+			"TradeshowListController",
+			"refreshToken",
+			"on",
+			"App",
+			"Http",
+			"App",
+			"to have a valid token",
+			"chris",
+			"c:\\nginx\\php"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/client/app/+home/components/order-form.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1777,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/client/app/shared/services/product.service.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1033,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								455,
+								455
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/client/app/shared/components/cart/cart.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 720,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								404,
+								404
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "kmt-marketing.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 331.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
